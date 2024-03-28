@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 0px 3px gray ;
+    display: flex;
+    z-index: 10;
+}
+.header{
+    display: flex;
+    height: 80px; 
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    
+
+}
+.logoContainer{
+ margin-left: 3%
+}
+.logoContainer img{
+    height: 52px;
+    width: 52px;
+    
+   
+}
+.navbar{
+    margin-left: 3%;
+    display: flex;
+     height: 80px; 
+}
+.navbar div{
+    display: flex;
+     align-items: center;
+     height: 80px; 
+     padding: 0px 15px;
+}
+.navbar a{
+  text-decoration: none;
+  color: #282c3f;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+}
+.new{
+    font-size: 10px;
+    color:#ff3f6c;
+    font-weight: 600;
+}
+.query{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #a1a1a1; */
+    gap: 15px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #f5f5f6;
+    margin-left: 5.5%;
+}
+.query img{
+    height: 14px;
+}
+.query input{
+    outline: none;
+    border: none;
+    font-size: 13px;
+    width: 100%;
+    color: #a1a1a1;
+    background-color: #f5f5f6;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 30px;
+    align-items: center;
+    gap: 2px;
+}
+.user img{
+    height: 16px;
+    width: 16px;
+}
+.user span{
+    font-size: 10px;
+    color: #000000;
+font-weight: 700;
+}
+.actions{
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+main{
+    width: 100vw;
+    /* overflow-x: hidden; */
+}
+main .flat400 img{
+    width: 100vw;
+}
+main .adv{
+    display: flex;
+    width: 100vw;
+    object-fit: contain;
+}
+.adv img{
+    width: 50vw;
+}
+
+main .flat100-200{
+   display: flex;
+   width: 100vv;
+    object-fit: contain;
+}
+.flat100-200 img{
+    width:50vw;
+}
+.coupons{
+    display: flex;
+   object-fit: contain;
+   width: 100vw;
+   
+}
+.coupons img{
+    width: 100vw;
+}
+.footwearoffer{
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+main .footwearoffer img{
+    width: 100vw;
+    
+}
+.items{
+    display: flex;
+    max-width: 100vw;
+    
+}
+
+.items img{
+   width: 16.5%;
+}
+
+main .shop-by-cat img{
+     width: 100vw;
+}
+.baseitems{
+    display: flex;
+    justify-content: center;
+}
+.baseitems img{
+    width: 20%;
+}
+main .knockout-offers img{
+     width: 98vw;
+     justify-self: center;
+     
+}
+footer{
+ background-color: #fafbfc;
+}
+.footer{
+    margin-top: 50px;
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+}
+.genericInfo{
+    display: flex;
+    color: #696b79;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    width: 100%;
+    margin: auto;
+     padding-top: 20px;
+     padding-bottom: 25px;
+}
+.genericInfo a{
+    color: #696b79;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.footer .genericInfo p{
+    margin: 19px 0px 12px;
+    color: #282c3f;
+    font-size: 11px;
+    font-weight: 700;
+}
+.footer1 , .footer2{
+    display: flex;
+    flex-direction: column ;
+    width: 16%;
+}
+.footer3 img{
+ height: 42px;
+ margin-right: 10px;
+}
+.footer4 strong{
+    color: #282c3f;
+}
+.footer4 {
+    margin-top: 19px;
+    width: 21%;
+    flex-wrap: nowrap;
+    line-height: normal;
+}
+.footer .footer3 p{
+    margin: 19px 0px 0px 0px;
+    padding-bottom: 25px;
+}
+.footer4 img{
+    width: 48px;
+    margin-right: 10px;
+}
+.footer4>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 30px;
+}
+.footer3 div{
+    display: flex;
+
+}
+.footer3{
+    width: 35%;
+}
+ .line{
+    border: 1px;
+    height: 1px;
+    background-color: #eaeaec;
+ }
+.pSearchTitle{
+    position: relative;
+    background: #fafbfc;
+    padding-right: 10px;
+    margin: 0px 0px 12px;
+    color: #282c3f;
+    font-size: 11px;
+    font-weight: 700;
+    display: inline;
+    bottom: 14px;
+}
+.desktop-popularSearch hr {
+    border: 1px;
+    height: 1px;
+    background-color: #eaeaec;
+}
+.pSearchlinks a{
+    color: #696b79 ;
+    font-size: 14px;
+    line-height: 25px;
+}
+.pSearchlinks a::after{
+    content: "|";
+    margin-left: 6px 
+
+} 
+.InfoSection{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 16px;
+     color: #696b79 ;
+
+}
+.flipkartCompany a{
+    color: #696b79 ;
+     font-weight: 400;
+}
+.contact a{
+     color: #526cd0 ;
+     font-weight: 700;
+}
+.index-lcInfoContainer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.index-lcHeader{
+    margin: 0px 0px 25px;
+    color: #282c3f;
+    font-size: 14px;
+    font-weight: 700;
+}
+.index-lcContainer{
+  margin: 32px 0px;
+  font-style: normal;
+  border-top: 1px solid #eaeaec;
+  border-bottom: 1px solid #eaeaec;
+  padding: 30px 0px;
+ 
+}
+.index-lcAddress{
+    width: 70%;
+    color: #696b79 ;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.index-lcLegalInfo{
+    width: 30%;
+     color: #696b79 ;
+    font-size: 14px;
+
+}
+.index-lcLegalInfo a{
+    color: #526cd0 ;
+     font-weight: 700;
+}
+.FreeShippingBanner{
+    background-color: #535766;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 250px;
+    gap: 15px;
+    position: fixed;
+    right: -105px;
+    transform: rotateZ(-90deg);
+    top: 60vh;
+    }
+.FreeShippingBanner svg{
+    transform: rotateZ(135deg);
+     height: 28px;
+     width: 24px;
+}
+.sidebar-content{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fcfcfc;
+    display: inline-block;
+    padding: 4px;
+
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="passCopy">
+                <div class="text">
+                    <div class="password"></div>
+                    <img class="refresh" src="/assests/refresh.svg" width="16px">
+                    </div>
+                <button class="copybtn" id="copy"><img class="copySvg" src="assests/copy.svg" alt=""
+                        height="16px"><span>Copy</span></button>
+            </div>
+           
+            <div class="dataSet">
+             <div class="warning"></div>
+                <div class="row">
+                    <label for="length">Length of Password</label>
+                    <input id="length" type="number" required>
+                </div>
+                <div class="row">
+                    <label for="uppercase">Contain Uppercase</label>
+                    <input id="uppercase" type="checkbox">
+                </div>
+                <div class="row">
+                    <label for="lowercase">Contain Lowercase</label>
+                    <input id="lowercase" type="checkbox">
+                </div>
+                <div class="row">
+                    <label for="number">Contain Number</label>
+                    <input id="number" type="checkbox">
+                </div>
+                <div class="row">
+                    <label for="character">Special Character</label>
+                    <input id="character" type="checkbox">
+                </div>
+            </div>
+            <div class="buttons">
+            <button class="generate">Generate</button>
+            <button class="reset">Reset</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

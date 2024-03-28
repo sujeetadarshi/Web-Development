@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 360px;
+    height: auto;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.passCopy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.text{
+    display: flex;
+    padding: 0px 5px;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    gap: 5px;
+}
+.password{
+    overflow-x: scroll;
+}
+.password::-webkit-scrollbar {
+    display: none;
+}
+.copybtn{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(159, 159, 186);
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    
+}
+.dataSet{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    background-color: rgba(200, 155, 255, 0.379);
+    font-size: 14px;
+}
+#length{
+    width: 40px;
+    outline: none;
+    text-align: center;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reset, .generate{
+    background-color: rgba(0, 255, 255, 0.635);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width:45%;
+    
+}
+.refresh{
+    transition: all 0.3s ease-in;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+.warning{
+    height: 40px;
+}
+.warning p{
+    color: red;
+    font-size: 14px;
+    width: 100%;
+}

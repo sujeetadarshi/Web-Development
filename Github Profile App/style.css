@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+h1{
+    position: absolute;
+    top: 80px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: transparent;
+    background:linear-gradient(45deg , rgb(57, 1, 83) ,rgb(116, 46, 148),rgb(105, 179, 211) ,rgb(16, 150, 150),rgb(0, 180, 200));
+    background-clip: text;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: auto;
+    border: 2px solid grey;
+
+}
+
+
+input{
+    width: 350px;
+    height: 35px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    padding-left: 10px;
+   border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #000;
+}
+
+form .img {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    padding-right: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+    cursor: pointer;
+}
+.main{
+   width: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.card{
+    width:auto;
+    display: flex;
+    background-color: azure;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 255, 255);
+}
+.profilePic {
+    height: 90px;
+    width: 90px;
+    background: linear-gradient(45Deg, rgb(35, 0, 96) , rgb(194, 18, 217));
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profilePic Img{
+    border-radius: 50%;
+}
+.profileInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.info{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    gap: 80px;
+}
+.info li{
+  
+}
+#repos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px ;
+    padding-top: 20px;
+    max-height: 100px;
+    overflow-y: scroll;
+}
+#repos::-webkit-scrollbar{
+    display: none;
+}
+
+.repo{
+    background-color: #212121;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 2px 4px;
+
+
+}

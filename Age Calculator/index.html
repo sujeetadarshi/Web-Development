@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="heading">AGE CALCULATOR</div>
+      <div class="birthdate">
+        <label for="birthdate">Choose Your Date Of Birth</label>
+        <input id="birthdate" type="date" />
+      </div>
+      <div class="buttons">
+        <button onclick="calculateAge()">Calculate</button>
+        <button onclick="resetForm()">Reset</button>
+      </div>
+
+      <div class="result"></div>
+    </div>
+
+    <script>
+      function calculateAge() {
+        const birthdate = document.getElementById("birthdate").value;
+        const resultElement = document.querySelector(".result");
+
+        if (birthdate) {
+          const today = new Date();
+          const birthdateDate = new Date(birthdate);
+
+          let ageYears = today.getFullYear() - birthdateDate.getFullYear();
+          let ageMonths = today.getMonth() - birthdateDate.getMonth();
+          let ageDays = today.getDate() - birthdateDate.getDate();
+
+          if (ageDays < 0) {
+            ageMonths--;
+            ageDays += new Date(
+              today.getFullYear(),
+              today.getMonth(),
+              0
+            ).getDate();
+          }
+
+          if (ageMonths < 0) {
+            ageYears--;
+            ageMonths += 12;
+          }
+          resultElement.innerText = `Your age is ${ageYears} years, ${ageMonths} months, and ${ageDays} days`;
+          resultElement.style.color = "green";
+        } else {
+          resultElement.innerText = "Please Enter Your Birthdate";
+          resultElement.style.color = "red";
+        }
+      }
+
+      function resetForm() {
+        document.getElementById("birthdate").value = "";
+        document.querySelector(".result").innerText = "";
+      }
+    </script>
+  </body>
+</html>
